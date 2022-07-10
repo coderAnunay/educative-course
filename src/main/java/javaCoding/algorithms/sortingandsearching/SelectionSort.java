@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SelectionSort {
 
-    private final static int COUNT = 0;
+    private static int COUNT = 0;
 
     public static void main(String[] args) {
         int[] arr = {8, 5, 2, 6, 9, 3, 1, 4, 0, 7};
@@ -40,6 +40,8 @@ public class SelectionSort {
         if (start < 0)
             return 0;
 
+        // increment counter
+        COUNT++;
         int minIdx = start;
         for (int i = start + 1; i < arr.length; i++) {
             if (arr[minIdx] > arr[i])
