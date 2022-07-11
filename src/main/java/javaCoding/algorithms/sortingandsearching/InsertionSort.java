@@ -19,8 +19,8 @@ public class InsertionSort {
      * @param arr
      */
     public static void insertionSort(int[] arr) {
-        // Traverse through 1 to arr.length-1 index of the array
-        for (int i = 0; i < arr.length - 1; i++) {
+        // Traverse through 1 to size of the array
+        for (int i = 1; i < arr.length; i++) {
             int elem = arr[i];
             int j = i - 1;
             // shift elements to the right to make space for the elem to be inserted
