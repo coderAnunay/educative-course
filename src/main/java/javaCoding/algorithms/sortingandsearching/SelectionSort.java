@@ -11,6 +11,7 @@ public class SelectionSort {
         selectionSort(arr);
         Arrays.stream(arr)
                 .forEach(x -> System.out.print(x + " "));
+        System.out.println("\nCOUNT of findMin: " + COUNT);
     }
 
     /**

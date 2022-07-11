@@ -4,11 +4,14 @@ import java.util.Arrays;
 
 public class BubbleSort {
 
+    private static int SWAP_COUNTER = 0;
+
     public static void main(String[] args) {
         int[] arr = {8, 5, 2, 6, 9, 3, 1, 4, 0, 7};
         bubbleSort(arr);
         Arrays.stream(arr)
                 .forEach(x -> System.out.print(x + " "));
+        System.out.println("\nSWAPS: " + SWAP_COUNTER);
     }
 
     /**
@@ -23,6 +26,7 @@ public class BubbleSort {
                 // traverse array from 0 to arr[i-1]
                 // Swap if the element is greater than the next element (for ascending order)
                 if (arr[j] > arr[j+1]) {
+                    SWAP_COUNTER++;
                     int temp = arr[j + 1];
                     arr[j + 1] = arr[j];
                     arr[j] = temp;
