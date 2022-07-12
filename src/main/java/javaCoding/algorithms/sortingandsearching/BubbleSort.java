@@ -9,9 +9,8 @@ public class BubbleSort {
     public static void main(String[] args) {
         int[] arr = {8, 5, 2, 6, 9, 3, 1, 4, 0, 7};
         bubbleSort(arr);
-        Arrays.stream(arr)
-                .forEach(x -> System.out.print(x + " "));
-        System.out.println("\nSWAPS: " + SWAP_COUNTER);
+        System.out.println("After Bubble sorting: " + Arrays.toString(arr));
+        System.out.println("SWAPS: " + SWAP_COUNTER);
     }
 
     /**

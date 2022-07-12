@@ -9,9 +9,8 @@ public class SelectionSort {
     public static void main(String[] args) {
         int[] arr = {8, 5, 2, 6, 9, 3, 1, 4, 0, 7};
         selectionSort(arr);
-        Arrays.stream(arr)
-                .forEach(x -> System.out.print(x + " "));
-        System.out.println("\nCOUNT of findMin: " + COUNT);
+        System.out.println("After Selection sorting: " + Arrays.toString(arr));
+        System.out.println("COUNT of findMin: " + COUNT);
     }
 
     /**

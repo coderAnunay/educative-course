@@ -9,9 +9,8 @@ public class InsertionSort {
     public static void main(String[] args) {
         int[] arr = {8, 5, 2, 6, 9, 3, 1, 4, 0, 7};
         insertionSort(arr);
-        Arrays.stream(arr)
-                .forEach(x -> System.out.print(x + " "));
-        System.out.println("\nSHIFTS: " + SHIFT_COUNTER);
+        System.out.println("After Insertion sorting: " + Arrays.toString(arr));
+        System.out.println("SHIFTS: " + SHIFT_COUNTER);
     }
 
     /**
