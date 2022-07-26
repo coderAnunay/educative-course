@@ -1,4 +1,4 @@
-package javaCoding.algorithms.sortingandsearching;
+package javacoding.algorithms.sorting;
 
 import java.util.Arrays;
 
